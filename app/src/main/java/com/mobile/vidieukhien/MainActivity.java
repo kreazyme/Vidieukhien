@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnOpen;
     private Button btnClose;
     private TextView txtview;
+    private TextView txttemp;
+    private TextView txthum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +31,52 @@ public class MainActivity extends AppCompatActivity {
         txtview = findViewById(R.id.txtword);
         btnOpen = findViewById(R.id.button);
         btnClose = findViewById(R.id.button2);
+        txttemp = findViewById(R.id.txttemp);
+        txthum = findViewById(R.id.txthum);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         final DatabaseReference reference= FirebaseDatabase.getInstance().getReference("work");
+        final DatabaseReference reftemp = FirebaseDatabase.getInstance().getReference("temp");
+        final DatabaseReference refhum = FirebaseDatabase.getInstance().getReference("humi");
+
+//        getSupportActionBar().hide();
+
+        refhum.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String str = "" + snapshot.getValue().toString()+"%";
+                txthum.setText(str);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        reftemp.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String str = "" + snapshot.getValue().toString()+"℃";
+                txttemp.setText(str);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.getValue().toString().equals("1")){
-                    txtview.setText("Door Closed");
+                    txtview.setText("Đang đóng");
                 }
                 else {
-                    txtview.setText("Door Open");
+                    txtview.setText("Đang mở");
                 }
 
             }
@@ -49,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("Bug");
             }
         });
+
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
