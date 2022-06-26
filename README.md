@@ -31,7 +31,7 @@ For support, email th.thoong@gmail.com or join our Github channel.
 
 ## Screenshots
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://user-images.githubusercontent.com/79961692/175811315-675a0594-ede1-4596-93a9-57ca29b139fc.png))
+![App Screenshot]([https://user-images.githubusercontent.com/79961692/175811315-675a0594-ede1-4596-93a9-57ca29b139fc.png])
 
 
 
