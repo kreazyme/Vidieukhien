@@ -31,9 +31,10 @@ For support, email th.thoong@gmail.com or join our Github channel.
 
 ## Screenshots
 
-![App Screenshot]([https://res.cloudinary.com/dr3toouvx/image/upload/v1656242057/samples/288287486_597719158588207_7303094104022406029_n_aqnjsd.png])
+![App Screenshot](https://res.cloudinary.com/dr3toouvx/image/upload/v1656242057/samples/288287486_597719158588207_7303094104022406029_n_aqnjsd.png)
 
 
+## Reference
 
 Ứng dụng sử dụng thư viện ESP8266WiFi.h và FirebaseESP32.h của tác giả Mobizt được tải về từ [Github](https://github.com/mobizt/Firebase-ESP8266)
 Ngoài ra có tham khảo các nguồn tài liệu khác từ Internet
