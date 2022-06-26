@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "185285812552",
+    "firebase_url": "https://vi-dieu-khien-e463d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "vi-dieu-khien-e463d",
+    "storage_bucket": "vi-dieu-khien-e463d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185285812552:android:2e7fca422f72160ee3d37d",
+        "android_client_info": {
+          "package_name": "com.mobile.vidieukhien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185285812552-mveld3mcnmrfnpkt8rdp5ats2av6uo3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG8qNVY02D-yCPfv4_W60HVjE6LnfYcXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185285812552-mveld3mcnmrfnpkt8rdp5ats2av6uo3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
